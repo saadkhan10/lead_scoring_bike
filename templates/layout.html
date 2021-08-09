@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+
+    <title> Predict Lead Scores </title>
+
+  </head>
+
+  <body>
+      <div class="container pt-3">
+        <div class="h2">Logicserve Lead Scoring Demo App</div>
+
+        <div id="content">{% block content %}{% endblock %}</div>
+
+        <div id="footer">
+          {% block footer %}
+          <div class="row">
+
+          </div>
+          {% endblock %}
+        </div>
+      </div>
+
+  </body>
+</html>
